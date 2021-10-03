@@ -46,6 +46,13 @@ img {
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .container {
   width: 100%;
   margin: 0 auto;
@@ -120,6 +127,12 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
+}
+
 .modal__button {
   position: absolute;
   top: 8px;
@@ -132,8 +145,8 @@ img {
   cursor: pointer;
 }
 
-.modal__button:hover .icon-vector,
-.modal__button:focus .icon-vector {
+.modal__button:hover .modal__icon-vector,
+.modal__button:focus .modal__icon-vector {
   fill: #2196f3;
 }
 
@@ -248,6 +261,12 @@ img {
   line-height: 1.71;
 }
 
+@media screen and (min-width: 1200px) {
+  .checkbox-lable {
+    margin-left: 13px;
+  }
+}
+
 .checkbox-lable__input {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -283,6 +302,12 @@ img {
   font-size: 12px;
   letter-spacing: 0.03em;
   margin-left: 24px;
+}
+
+@media screen and (min-width: 1200px) {
+  .checkbox-lable__text {
+    font-size: 14px;
+  }
 }
 
 .form__label:focus-within .form__input,
@@ -441,6 +466,7 @@ img {
 @media screen and (min-width: 1200px) {
   .address-list__item:not(:last-child) {
     margin-right: 30px;
+    margin-bottom: 0px;
   }
 }
 
@@ -812,6 +838,12 @@ img {
   line-height: 1.67;
 }
 
+@media screen and (min-width: 1200px) {
+  .team__title {
+    font-size: 36px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .team-list {
     display: -webkit-box;
@@ -908,6 +940,12 @@ img {
   color: #212121;
   font-size: 28px;
   line-height: 1.67;
+}
+
+@media screen and (min-width: 1200px) {
+  .clients__title {
+    font-size: 36px;
+  }
 }
 
 .clients-list {
