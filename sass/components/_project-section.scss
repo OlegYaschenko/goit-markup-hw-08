@@ -3,6 +3,9 @@
   flex-wrap: wrap;
   margin-right: calc(-1 * 30px);
   margin-bottom: calc(-1 * 30px);
+  @media screen and (max-width: 767px) {
+    margin-bottom: 0px;
+  }
   @media screen and (min-width: 768px) {
     margin: -15px;
   }
@@ -11,12 +14,18 @@
     transition: box-shadow 250ms $transition-timing-function;
     width: 450px;
     border: 1px solid $secondary-border-color;
+
     @media screen and (min-width: 768px) {
       width: calc(100% / 2 - 30px);
       margin: 15px;
     }
     @media screen and (min-width: 1200px) {
       width: calc(100% / 3 - 30px);
+    }
+    &:not(:last-child) {
+      @media screen and (max-width: 767px) {
+        margin-bottom: 30px;
+      }
     }
     &:hover,
     &:focus {

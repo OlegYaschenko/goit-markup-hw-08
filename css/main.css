@@ -1334,6 +1334,12 @@ img {
   margin-bottom: calc(-1 * 30px);
 }
 
+@media screen and (max-width: 767px) {
+  .project-card {
+    margin-bottom: 0px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .project-card {
     margin: -15px;
@@ -1359,6 +1365,12 @@ img {
 @media screen and (min-width: 1200px) {
   .project-card__item {
     width: calc(100% / 3 - 30px);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .project-card__item:not(:last-child) {
+    margin-bottom: 30px;
   }
 }
 
