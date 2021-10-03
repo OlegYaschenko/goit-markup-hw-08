@@ -1,0 +1,171 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $background-color;
+  &-flex {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    @media screen and (min-width: 1200px) {
+      justify-content: start;
+    }
+  }
+  &__address {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+  &__logo {
+    display: block;
+    margin-bottom: 20px;
+    color: $primary-white-color;
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+  }
+  &__join {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+    margin-top: 12px;
+    @media screen and (min-width: 768px) {
+      margin-left: 165px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-left: 70px;
+    }
+  }
+  &__subscribe {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      width: 450px;
+    }
+    margin-top: 12px;
+  }
+}
+.address-section {
+  text-align: center;
+  font-style: normal;
+  &__text {
+    margin-bottom: 8px;
+    color: $primary-white-color;
+    line-height: 1.71;
+  }
+  &__link {
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.71;
+  }
+  &__item {
+    margin-bottom: 8px;
+  }
+}
+.join__text {
+  font-family: Roboto;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 1.33;
+  color: $primary-white-color;
+  margin-bottom: 20px;
+}
+.join__list {
+  display: flex;
+}
+.join__link {
+  transition: background-color 250ms $transition-timing-function;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: $primary-white-color;
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+}
+.join__item:not(:last-child) {
+  margin-right: 10px;
+}
+.join__icon {
+  fill: currentColor;
+}
+.subscribe__text {
+  text-align: center;
+  font-family: Roboto;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 1.33;
+  color: $primary-white-color;
+  margin-bottom: 20px;
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+  }
+}
+
+.subscribe__label {
+  width: 100%;
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
+}
+
+.subscribe__input {
+  padding-left: 16px;
+  font-size: 16px;
+  line-height: 1.25;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: $primary-white-color;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0px;
+  }
+
+  &::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+.subscribe__button {
+  position: relative;
+  padding-left: 29px;
+  text-align: left;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  transition: background-color 250ms $transition-timing-function;
+  color: $primary-white-color;
+  background-color: $accent-color;
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 12px;
+  }
+}
+.subscribe__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    align-items: flex-end;
+    margin-left: 93px;
+  }
+}
+.subscribe__icon {
+  position: absolute;
+  right: 28px;
+  bottom: 13px;
+  fill: $primary-white-color;
+}

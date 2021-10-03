@@ -1,0 +1,39 @@
+.work {
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
+  padding-top: 0;
+  &-list {
+    display: flex;
+    &__item {
+      position: relative;
+      &:not(:last-child) {
+        margin-right: $card-set-gap;
+      }
+    }
+    &__text {
+      font-weight: 700;
+      font-size: 14px;
+      text-transform: uppercase;
+      text-align: center;
+      line-height: 1.14;
+      color: $primary-white-color;
+    }
+    &__div {
+      position: absolute;
+      bottom: 3px;
+      padding-top: 27px;
+      padding-bottom: 27px;
+      width: 100%;
+      background-color: $bg-color-img;
+    }
+  }
+}
+.title {
+  margin-bottom: 50px;
+  text-align: center;
+  color: $title-text-color;
+  font-size: 36px;
+  line-height: 1.67;
+}

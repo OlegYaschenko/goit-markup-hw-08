@@ -1,0 +1,28 @@
+.address-list {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    margin-left: auto;
+  }
+  display: flex;
+  flex-direction: column;
+  &__link {
+    transition: color 250ms $transition-timing-function;
+    &:focus,
+    &:hover {
+      color: $accent-color;
+    }
+  }
+  &__icon {
+    margin-right: 10px;
+    fill: currentColor;
+  }
+  &__item:not(:last-child) {
+    margin-bottom: 10px;
+    @media screen and (min-width: 1200px) {
+      margin-right: 30px;
+    }
+  }
+}
